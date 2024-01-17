@@ -1,0 +1,13 @@
+.delete_pro_btn {
+    background-color: #6186e5;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.delete_pro_btn:hover {
+    background-color: #3c5aa5;
+}

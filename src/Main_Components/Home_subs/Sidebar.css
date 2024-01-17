@@ -1,0 +1,168 @@
+.sidebar {
+    width: 350px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    Font-family: Cambria, Georgia, serif;
+    transition: 1s width;
+ position: relative;
+}
+.sb_mainn {
+    width: 100%;
+}
+.sidebar_closed {
+    width: 1.3%;
+    background-color: rgb(243, 240, 240);
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    Font-family: Cambria, Georgia, serif;
+    transition: 1s width;
+    z-index: 0;
+
+}
+
+
+.sidebar_nav_closed {
+    display: none;
+}
+.sidebar_closed > div {
+    width: 100%;
+}
+.sidebar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+
+}
+.sbn_main {
+    display: flex;
+    width: 90%;
+
+}
+.sbn_main_left {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.sbn_main_right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+}
+.softicon {
+    width: 50%;
+}
+.sbn_mr_p1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+color: rgb(95, 102, 100);
+
+
+}
+.sbn_mr_p2{
+    font-size: 0.9rem;
+    color: rgb(66, 69, 71);
+}
+.line {
+    background-color: rgb(215, 220, 220);
+    width: 1px;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.line_arrow {
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10%;
+    right:-12px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0.5px solid rgb(215, 220, 220);
+
+}
+.line_arrow:hover {
+ 
+    background-color: rgb(191, 248, 248);
+    box-shadow:  1px 1px 5px #5e6161,
+             -1px -1px 5px #808687;
+}
+
+.arrowicon {
+    width: 70%;
+    rotate: 180deg;
+}
+.arrowicon2 {
+    width: 70%;
+}
+
+
+
+.sidebar_body_closed {
+    display: none;
+}
+.sidebar_body {
+    border-top: 0.5px solid rgb(215, 220, 220);
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kanbanicon {
+    width: 20px;
+    margin-right: 15px;
+}
+.memicon {
+    width: 20px;
+    margin-right: 15px;
+}
+.proicon {
+    width: 20px;
+    margin-right: 15px;
+}
+.sb_tab {
+    cursor: pointer;
+    width: 90%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 40px;   
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.activeT {
+  transform: scale(1.03);
+    transition: 0s background-color; /* Add a transition for background-color */
+    background-color: rgb(217, 226, 226);
+
+}
+.sb_tab:hover {
+    background-color: rgb(243, 240, 240);
+}
+.hr1 {
+    width: 95%;
+    height: 0.1px;
+    opacity: 0.2;
+    color: aqua;
+    background-color: aqua;
+    margin-bottom: 10px;
+}

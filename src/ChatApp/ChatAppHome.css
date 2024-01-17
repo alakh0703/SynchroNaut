@@ -1,0 +1,82 @@
+/* Style for the main container */
+.chat_app_home_main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Style for the container inside the main */
+  .chat_app_home_main_container {
+    margin-top: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    background-color: #fff;
+    height:fit-content;
+  }
+  
+  /* Style for the navbar */
+  .chat_app_home_main_con_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for login and signup buttons in the navbar */
+  .chat_app_home_main_con_navbar_login,
+  .chat_app_home_main_con_navbar_signup {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .chat_app_home_main_con_navbar_active {
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid #070606;
+    border-radius: 5px;
+    
+  }
+  /* Style for the main content area */
+  .chat_app_home_main_con_main {
+    padding: 20px;
+  }
+  
+  /* Style for the login and signup forms */
+  .chat_app_home_main_con_main_login,
+  .chat_app_home_main_con_main_signup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for email and password input fields */
+  .chat_app_home_main_con_main_login_email,
+  .chat_app_home_main_con_main_signup_email,
+  .chat_app_home_main_con_main_login_password,
+  .chat_app_home_main_con_main_signup_password,
+  .chat_app_home_main_con_main_signup_confirm_password {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chat_app_home_main_con_main_button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+  .chat_app_home_main_con_main_button:hover {
+    background-color: #ccc;
+  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .chat_app_home_main_container {
+      width: 80%;
+    }
+  }
+  

@@ -1,0 +1,235 @@
+.acc_sett {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.acc_sett_main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.acc_sett_main_head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    
+}
+.acc_sett_main_head_left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.acc_sett_main_head_left_circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(136, 153, 166);
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.acc_sett_main_head_left_btn {
+    background-color: none;
+    background-color: rgb(221, 229, 234);
+    border: 0.5px solid rgb(136, 153, 166);
+    border-radius: 2px;
+    color: black;
+}
+.acc_sett_main_head_left_btn:hover {
+    background-color: rgb(215, 235, 251);
+}
+.acc_sett_main_head_right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+.acc_sett_main_head_right_name {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.acc_sett_main_head_right_email {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.acc_sett_main_head_right_changePass {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(136, 153, 166);
+
+}
+.acc_sett_main_head_right_changePass:hover {
+    background-color: rgb(215, 235, 251);
+}
+.acc_sett_changePass_POP {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.acc_sett_changePass_POP_main {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acc_sett_changePass_POP_main_head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.acc_sett_changePass_POP_main_body {
+    width: 100%;
+    flex-direction: column;
+
+    display: flex;
+    padding-left: 20px;
+}
+.acc_sett_changePass_POP_main_head_oldPass {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.acc_sett_changePass_POP_main_head_newPass {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    margin-top: 20px;
+
+}
+
+.acc_sett_changePass_POP_main_body_cancelBtn {
+    width: 30%;
+    margin: 20px 20px 0px 0px;
+    padding: 5px;
+    border-radius: 5px;
+
+    background-color: rgb(221, 229, 234);
+    color: black;
+}
+
+.acc_sett_changePass_POP_main_body_saveBtn {
+    width: 30%;
+    margin: 20px 20px 20px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(169, 247, 173);
+    color: black;
+}
+.acc_sett_changePass_POP_main_body_saveBtn:hover {
+    background-color: rgb(127, 239, 127);
+}
+
+.acc_sett_changePass_POP_main_body_cancelBtn:hover {
+    background-color: rgb(231, 158, 122);
+}
+
+.acc_sett_error {
+    color: rgb(236, 52, 52);
+
+    font-size: 1.1rem;
+}
+
+.acc_sett_main_head_left_upload_img {
+    width: 200px;
+}
+
+
+.acc_sett_main_head_left_upload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+.acc_sett_main_head_left_upload_main_1 {
+    width: 19%;
+    padding: 30px;
+    background-color: rgb(249, 247, 243);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.acc_sett_main_head_left_upload_main {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(136, 153, 166);
+}
+.acc_sett_final_upload {
+    margin-top: 20px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(174, 181, 174);
+    color: black;
+
+
+}
+.acc_sett_final_upload:hover {
+    background-color: rgb(127, 239, 127);
+}
+.acc_sett_previewImg{
+  object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+.acc_sett_main_head_left_circle {
+    overflow: hidden;
+    border: 2px solid rgb(136, 153, 166);
+    background-color: antiquewhite;
+}
+.acc_sett_profilePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

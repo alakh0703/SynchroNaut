@@ -1,0 +1,352 @@
+/* Add this CSS to your styles file or component */
+
+.ptm_main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    background-color: #f4f4f4;
+  }
+  
+  .ptm_main_container {
+    margin-top: 50px;
+    height: 60%;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .ptm_main_title {
+    background-color: #94c8eb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .ptm_main_title_addTodo {
+    position: absolute;
+    left: 1%;
+    top: 20%;
+
+    background-color: #f2f7fb;
+    color: #0b0707;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ptm_main_title_addTodo:hover {
+    background-color: rgb(32, 59, 59);   
+    color: white;
+}
+  
+  .ptm_main_bottom {
+    display: flex;
+  }
+  
+  .ptm_main_todo,
+  .ptm_main_done {
+    flex: 1;
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+   
+
+  }
+  .ptm_main_todo::-webkit-scrollbar,.ptm_main_done::-webkit-scrollbar {
+    display: none;
+  }
+  .ptm_main_todo_nav,
+  .ptm_main_done_nav {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .ptm_main_done_nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ptm_main_todo_container,
+  .ptm_main_done_container {
+    margin-top: 20px;
+  }
+  
+  .ptm_main_todo_item,
+  .ptm_main_done_item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ptm_main_todo_item:hover,
+  .ptm_main_done_item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .ptm_main_todo_item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .done_btn_todo {
+    background-color: #94c8eb;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+  }
+  .ptm_main_todo_item:hover > .done_btn_todo {
+    display: block;
+    
+  }
+  .ptm_main_done_item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .res_btn_todo {
+    background-color: #94c8eb;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+  }
+    .ptm_main_done_item:hover > .res_btn_todo {
+        display: block;
+        
+    }
+
+.ptm_main_todo_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.ptm_main_count {
+    background-color: #94c8eb;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.ptm_main_todo_item {
+    /* add some animation*/
+    animation: slideIn 0.5s ease;
+    animation-fill-mode: backwards;
+
+
+}
+.ptm_main_addTodo_container {
+    background-color: #f1e9e9;
+    height: 250px;
+    position: absolute;
+    top: 70px;
+    left: 37%;
+    width: 400px;
+    z-index: 1;
+    padding: 20px;
+    border: 1px solid #6f6b6b ;
+
+    border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.bla_bla_bla_ptm {
+    display: flex;
+}
+.add_todo_input_btn_ptm {
+    background-color: #94c8eb;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.add_todo_input_btn_ptm:hover {
+    background-color: #0b0707;
+}
+.add_todo_input_ptm {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;   
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.add_todo_input_desc_ptm {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;   
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    max-width: 100%;
+}
+.ptm_main_addTodo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.delete_all_ctasks_ptm {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.delete_all_ctasks_ptm:hover {
+  opacity: 1;
+} 
+.ptm_delete_pop_up {
+  
+
+}
+/* Add this CSS to your stylesheets */
+.ptm_delete_pop_up {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  top: 70px;
+  left: 40%;
+  width: 350px;
+  position: absolute;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid #6f6b6b ;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.ptm_delete_pop_up p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.ptm_delete_pop_up_btns {
+  display: flex;
+  justify-content: center;
+}
+
+
+.ptm_delete_pop_up_btn1 {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.ptm_delete_pop_up_btn2 {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ptm_delete_pop_up_btn1:hover {
+  background-color: rgb(238, 102, 87);
+}
+.ptm_delete_pop_up_btn2:hover {
+  background-color: rgb(3, 151, 0);
+}
+
+.ptm_main_selected_task {
+
+  border: 1px solid #ccc;
+  padding: 20px;
+
+  position: absolute;
+  top: 70px;
+  width: 500px;
+  left: 37%;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #6f6b6b ;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: fit-content;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ptm_main_selected_task_container {
+  text-align: left;
+}
+
+.ptm_main_selected_task h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.ptm_main_selected_task p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.ptm_main_selected_task_btn {
+  background-color: #b9cfe5;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ptm_main_selected_task_btn:hover {
+  background-color: #0056b3;
+}
+.ptm_main_done_item {
+    /* add some animation*/
+    animation: slideIn 0.5s ease;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        background-color: #94c8eb;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.chatbox_main {
+    width: 100%;
+    height: 100%;
+    Font-family: Cambria, Georgia, serif;
+
+}
+.chatbox_header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;    
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(159, 158, 158);
+}
+.chatbox_header_left {
+    width: 6%;
+    background-color: rgb(213, 128, 17);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+   object-fit: contain;
+
+   overflow: hidden;
+
+
+}
+.chatbox_header_left_icon_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+.chatbox_header_right {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+/* ChatBox.css */
+
+.chatbox_main {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+  .chatbox_header_left {
+    display: flex;
+    align-items: center;
+  }
+ 
+  
+  .chatbox_header_right p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .chatbox_body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .chatbox_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chatbox_footer_icon_image {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .chatbox_footer_searchbox {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .chatbox_footer_Sendbtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+
+  /* ChatBox.css */
+
+/* ... (previous styles) */
+
+/* Updated styles for message section */
+
+/* ChatBox.css */
+
+/* ... (previous styles) */
+
+/* New styles for message section */
+.message_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 8px;
+    margin: 8px;
+    max-width: 70%;
+    border-radius: 8px;
+  }
+
+  
+.message {
+    position: relative;
+    padding: 8px;
+    margin: 8px;
+    width: fit-content;
+    max-width: 70%;
+    border-radius: 8px;
+    padding-right: 20px;
+  }
+    
+  .my_message {
+    align-self: flex-end;
+    /* background-color: #4caf50; */
+    background-color: rgb(204, 241, 244);
+    color: black;
+    /* border: 1px solid #b1fbb3; */
+    float: right;
+  }
+  
+  .other_message {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+
+  }
+  .timestamp {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .status {
+    position: absolute;
+    bottom: -13px;
+    right: 8px;
+    font-size: 10px;
+    color: #555;
+  }
+  .date_divider {
+    text-align: center;
+    margin: 10px 0;
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+.message_media {
+    width: 250px;
+    transition: filter 0.3s;
+
+}
+.message_media_container:hover .message_media {
+  filter: brightness(70%);
+
+
+}
+
+.message_media_container:hover > .download_text {
+  opacity: 1;
+}
+.message_media_container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.download_text {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s;
+}
+.download_text:hover {
+  opacity: 1;
+}
+
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #555;
+  font-size: larger;
+}
+
+.imagePreview {
+  display: flex;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imagePreview :first-child {
+  margin-right: 10px;
+}
+.imagePreview > p {
+  margin-left: 10px;
+}
+.cancel_preview {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgb(238, 163, 163);
+  padding: 0 5px;
+  border-radius: 50%;
+}

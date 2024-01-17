@@ -1,0 +1,117 @@
+.main {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    height: fit-content;
+    Font-family: Cambria, Georgia, serif;
+    
+
+}
+.main_nav {
+    padding-bottom: 0.5%;
+    border-bottom: 1px solid #dad5d5;
+    display: flex;
+    align-items: center;
+}
+.main_yourwork {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-right: 30px;
+}
+.main_nav_viewall {
+    color: rgb(95, 95, 182);
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+.main_nav_viewall:hover {
+    text-decoration: underline;
+}
+.main_rprojects {
+    display: flex;
+    /* background-color: antiquewhite; */
+    flex-wrap: wrap;
+   
+}
+@media screen and (max-width: 768px) {
+    .main_nav {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+.main_activities_main {
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.main_nav2 {
+    padding-bottom: 0.5%;
+    border-bottom: 1px solid #dad5d5;
+    margin-top: 20px;
+}
+.main_activities {
+    font-size: 1.8rem;
+    font-weight: 400
+}
+.main_a1_img {
+    width: 50%; 
+    padding: 10px;
+
+}
+.main_a1_img2 {
+    width: 50%; 
+    padding: 10px;
+
+}
+.main_a1_profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #dad5d5;
+padding-top: 20px;
+padding-bottom: 30px;
+    /* background-color: beige; */
+    border-radius: 50px;
+    margin-right: 30px;
+    width: 15%;
+}
+.main_a1_profile:hover {
+    border: 1px solid #000000;
+}
+
+
+.main_a1_h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.main_a1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+.main_a1_profile:hover > .main_a1_img {
+    animation: 7s linear infinite rotate-con;
+
+}
+
+@keyframes rotate-con {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.no_projects_found {
+    margin-top: 10px;
+}
+.no_pf_create {
+    text-decoration: none;
+    color: black;
+    
+}

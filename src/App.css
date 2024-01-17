@@ -1,0 +1,9 @@
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  color: rgb(228, 83, 83);
+  background: rgb(241, 241, 231);
+}

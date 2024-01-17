@@ -1,0 +1,217 @@
+.hangout_main {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.hangout_container  {
+    width: 70%;
+    background-color: white;
+    margin-top: 20px;
+    height: 80%;
+    display: flex;
+    box-shadow:  5px 5px 10px #edeaea,
+             -5px -5px 10px #f0eded;
+}
+
+.hangout_left {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(253, 252, 250);
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+.hangout_left_tabs {
+    width: 100%;
+    height: 40px;
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hangout_left_tabs_active {
+    border-bottom: 2px solid rgb(151, 195, 204);
+}
+.hangout_left_tab_group {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}   
+.hangout_left_tab_chats {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hangout_left_groups_list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.hangout_left_list_ind {
+    width: 99%;
+    height: 60px;
+    background-color: rgb(253, 252, 250);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.hangout_left_list_ind:hover {
+    background-color: rgb(247, 247, 247)
+}
+.hangout_message_last_seen {
+    color: gray;
+}
+.hangout_left_list_ind_left {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+    margin-right: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(125, 202, 232, 0.702)
+}
+.hangout_left_list_ind_right {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hangout_left_chats_list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.hangout_left_chats_list_search_bar {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(246, 245, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    
+}
+.hangout_left_chats_list_search_bar_input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e0e0e0; */
+    outline: none;
+    padding-left: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.hangout_left_chats_list_search_bar_input:active {
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding-left: 10px;
+}
+
+.hangout_right{
+    width: 70%;
+    height: 100%;
+}
+.hangout_left_list_ind_right_top {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.hangout_left_list_ind_right_bottom {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hangout_message_unread_mes {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(151, 195, 204);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.hangout_left_chats_list_search_bar_searchResult {
+    width: 100%;
+    background-color: rgb(241, 239, 233);
+    height: fit-content;
+    max-height: 200px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hangout_left_chats_list_search_bar_searchResult_each {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: antiquewhite;
+    border: 1px solid #453c3c;
+}
+
+
+.hangout_left_chats_list_search_bar_searchResult_each_left {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.close_searchResult {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(203, 75, 49);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}

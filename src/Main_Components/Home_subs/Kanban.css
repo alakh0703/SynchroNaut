@@ -1,0 +1,76 @@
+.kanban {
+    flex-grow: 100;
+    padding-top: 15px;
+    padding-left: 30px;
+    Font-family: Cambria, Georgia, serif;
+    padding-right: 30px;
+}
+.kanban__header {
+    width: 100%;
+    
+}
+.kh_path {
+    font-size: 0.9rem;
+    color: rgb(154, 156, 158);
+    margin-bottom: 10px;
+}
+.kh_title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.kh_addTask {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(236, 239, 231);
+    color: black;
+}
+.kh_addTask:hover {
+    background-color: rgb(226, 229, 221);
+    cursor: pointer;
+}
+
+
+/* Add todoz */
+.kanban__addNewTaskFormDiv {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 30%;
+    top: 12%;
+    border-left: 2px solid rgb(226, 229, 221);
+    background-color: white;
+    z-index: 1;
+}
+
+.filter_assignedToME  {
+    display: flex;
+    margin-top: 20px;
+}
+.kh_check {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.delete_doneTask {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: rgb(226, 229, 221);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 30px;
+    margin-bottom: 20px;
+}
+.deleteIcon {
+    width: 20px;
+
+}
+.deleteIcon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

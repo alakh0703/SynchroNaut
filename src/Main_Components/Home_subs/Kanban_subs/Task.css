@@ -1,0 +1,79 @@
+.task_container {
+    border-radius: 10px;
+    padding: 8px;
+    color: #000;
+    margin-bottom: 8px;
+    min-height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(232, 232, 205);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+.task_container2 {
+    border-radius: 10px;
+    padding: 8px;
+    color: #000;
+    margin-bottom: 8px;
+    min-height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(146, 146, 134);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+
+.task_icon {
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
+.text_content {
+    
+}
+
+.task-main-assign-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(177, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+ 
+.task-main-title {
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.task-main-assign {
+    display:flex;   
+
+}
+.task-main-des {
+    margin-bottom: 10px;
+    color: gray;
+}
+.task-main-assign-img {
+    margin-right: 10px;
+}
+.task-main-name {
+    margin-top: 1px;
+    background-color: rgb(122, 221, 219);
+    padding: 2px;
+    display: none;
+}
+
+.task-main-assign:hover > .task-main-name {
+    display: block;
+}
+

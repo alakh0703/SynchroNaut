@@ -1,0 +1,153 @@
+.create_project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.create_project_main {
+    width: 60%;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+.one_head{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.create_project_main_one {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.one_input {
+    width: 40%;
+    margin-bottom: 2px;
+
+    padding-left: 10px;
+    height: 30px;
+    margin-left: 50px;
+
+}
+
+.one_proj_description {
+    height: 100px;
+    padding: 10px;
+}
+
+.create_project_main_two {
+    width: 100%;
+    height: 100%;
+}
+.create_project_main_three {
+    width: 100%;
+    height: 100%;
+}
+.create_project_main_four {
+    width: 100%;
+    height: 100%;
+}
+.create_project_main_five {
+    width: 100%;
+    height: 100%;
+}
+.two_head {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.two_input  {
+    width: 40%;
+    margin-bottom: 20px;
+
+    padding-left: 10px;
+    height: 30px;
+    margin-left: 50px;
+}
+.two_invitees {
+    margin-left: 50px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.two_invitee {
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.three_head {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.three_icons {
+    margin-left: 50px;
+
+}
+.three_icon {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.three_radio {
+
+    margin-right: 20px;
+}
+.create_project_main_Btn {
+    position: absolute;
+    bottom: -50px;
+    left: 0;    
+}
+.create_project_main_Btn button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1E90FF;
+    color: white;
+    cursor: pointer;
+}
+.create_project_main_Btn button:hover{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #63a7eb;
+    color: white;
+    cursor: pointer;
+}
+.prev_btn {
+    width: 30px;
+    rotate: 180deg;
+}
+.next_btn {
+    width: 30px;
+
+}
+
+.tickIcon {
+    width: 30px;
+}
+
+.precaution_projectname {
+    margin-left: 55px;
+    font-size: 0.8rem;
+    color: gray;
+    margin-bottom: 20px;
+}

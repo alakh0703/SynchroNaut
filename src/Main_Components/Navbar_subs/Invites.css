@@ -1,0 +1,124 @@
+.Invites_Main {
+    position: absolute;
+    top: 90px;
+    width: 50%;
+    left: 60px;
+    height: 500px;
+    z-index: 100;
+    display: flex;
+    border: 1px solid black; 
+    background-color: white;
+    max-height: 500px;
+}
+
+.Invites_Main_Left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px; /* Set the max-height here */
+    overflow-y: scroll; /* Apply the scroll to the container */
+  }
+  
+  .InviteContainer {
+    /* You can remove this class from the HTML and apply styles here if needed */
+  }
+  
+  .Invite {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+.Invite:hover {
+    background-color: rgb(159, 206, 211);
+    cursor: pointer;
+}
+
+.Invites_Main_Right {
+  width: 60%;
+  padding: 10px;
+  padding-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.invite_main_right_top {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+
+}
+.invite_main_right_middle_owner {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.invite_main_right_middle {
+  padding-top: 20px;
+
+  width: 100%;
+}
+.invite_project_manager {
+  margin-left: 20px;
+  padding: 5px;
+}
+.invite_main_right_middle_description {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.invite_main_right_middle_description_text {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.invite_des {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.invite_main_right_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.accept_invite {
+  margin-right: 20px;
+  background-color: rgb(78, 138, 78);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100px;
+}
+.accept_invite:hover {
+  background-color: rgb(18, 94, 18);
+  cursor: pointer;
+}
+
+.reject_invite {
+  margin-right: 20px;
+  background-color: rgb(231, 168, 110);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100px;
+}
+.oops_no_invites {
+  margin-left: 10px;
+  margin-top: 10px;
+}
