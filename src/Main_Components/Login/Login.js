@@ -11,7 +11,7 @@ function Login(props) {
   const { dispatch } = useContext(AuthContext);
   const Navigate = useNavigate()
   const [showLogin, setShowLogin] = useState(true)
-
+  const [loading, setLoading] = useState(false)
   const signUpInstead = () => {
     setShowLogin(!showLogin)
   }
@@ -41,6 +41,7 @@ function Login(props) {
   };
   const handleLogin = async (e) => {
     e.preventDefault()
+    setLoading(true)
     if (Lemail && password) {
       const user = {
         email: Lemail,
@@ -74,10 +75,12 @@ function Login(props) {
             token
           }
           setUser(payload)
+          setLoading(false)
         }
       }
       catch (err) {
         alert("Account not found")
+        setLoading(false)
       }
 
     }
@@ -86,6 +89,7 @@ function Login(props) {
 
   const handleSignUp = async (e) => {
     e.preventDefault()
+    setLoading(true(
     try {
       if (name && Semail && Spassword && Spassword2) {
         if (Spassword === Spassword2) {
@@ -116,7 +120,7 @@ function Login(props) {
               token
             }
             props.setFirstTime(true)
-
+            setLoading(false)
             setUser(payload)
           }
 
@@ -124,12 +128,14 @@ function Login(props) {
         }
         else {
           alert("Passwords do not match")
+          setLoading(false)
         }
       }
 
     }
     catch (err) {
       alert("Email already exists")
+    setLoading(false)
     }
   };
 
@@ -166,7 +172,7 @@ function Login(props) {
           required
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button className='button_login' onClick={handleLogin}>Login</button>
+        <button className='button_login' onClick={handleLogin}>{loading ? "verifying" : "Login"}</button>
         <p className='changeLoginType' onClick={signUpInstead}>Sign Up Instead</p>
       </form> :
         <form className="login-container" onSubmit={handleSignUp}>
@@ -202,7 +208,7 @@ function Login(props) {
             value={Spassword2}
             onChange={(e) => setSpassword2(e.target.value)}
           />
-          <button className='button_login' onClick={handleSignUp}>Create Account</button>
+          <button className='button_login' onClick={handleSignUp}>{loading ? "Creating your account" : "Create Account" }</button>
           <p className='changeLoginType' onClick={loginInstead}>Login Instead</p>
         </form>}
     </>
