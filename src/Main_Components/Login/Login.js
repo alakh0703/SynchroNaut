@@ -89,7 +89,7 @@ function Login(props) {
 
   const handleSignUp = async (e) => {
     e.preventDefault()
-    setLoading(true(
+    setLoading(true)
     try {
       if (name && Semail && Spassword && Spassword2) {
         if (Spassword === Spassword2) {
