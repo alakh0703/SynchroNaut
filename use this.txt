@@ -1,3 +1,0 @@
-1. Suspend
-2. lazy -- to import the component when it's required/requested. Specially on routing page. It is also known as Dynamic Imports
-3. 
